@@ -38,7 +38,7 @@ public class CelebrityGame {
 	 */
 	public boolean processGuess(String guess) {
 		String newGuess = guess.trim().toLowerCase();
-		if(newGuess.equals(gameCelebrity.getAnswer())) {
+		if(newGuess.equals(gameCelebrity.getAnswer().toLowerCase())) {
 			celebGameList.remove(0);
 			if(celebGameList.size() > 0) {
 				gameCelebrity = celebGameList.get(0);
